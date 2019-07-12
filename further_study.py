@@ -171,10 +171,8 @@ def custom_index(input_list, value):
     i = 0
     for item in input_list:
         if item == value:
-            break
+            return i
         i += 1
-
-    return i
 
 
 def custom_count(input_list, value):
