@@ -168,7 +168,13 @@ def custom_index(input_list, value):
 
     """
 
-    return 0
+    i = 0
+    for item in input_list:
+        if item == value:
+            break
+        i += 1
+
+    return i
 
 
 def custom_count(input_list, value):
@@ -183,8 +189,12 @@ def custom_count(input_list, value):
         2
 
     """
+    i = 0
+    for item in input_list:
+        if item == value:
+            i += 1
 
-    return 0
+    return i
 
 
 def custom_reverse(input_list):
